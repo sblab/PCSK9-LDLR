@@ -1,14 +1,11 @@
 # README: DATA DEPOSITION
 
-### Project Overview
 
 This repository contains the structural and computational data generated during the investigation of wild-type (WT), loss-of-function (LOF), and gain-of-function (GOF) variants of the PCSK9–LDLR complex.
 
 The deposited dataset includes modeled three-dimensional protein structures, 500 ns molecular dynamics (MD) simulation trajectories, trajectory analysis outputs, conformational clustering results, representative structures, and protein structural network (PSN) analysis data.
 
 The repository is organized into the following folders:
-
----
 
 ### 1. Modeled Structures
 **Folder:** `Modeled structures/`
@@ -64,17 +61,3 @@ The numerical MD analysis outputs are primarily provided in GROMACS XVG format, 
 ### 4. GROMACS Analysis Commands
 **Folder:** `GROMACS Analysis_Commands/`
 
-Contains the GROMACS command files and associated scripts used for molecular dynamics trajectory processing and analysis.
-
-
-
----
-
-### Data Organization and Availability
-
-The repository provides structural coordinates, molecular dynamics simulation data, numerical analysis outputs, clustering results, and PSN-related files in their respective folders.
-
-This README describes the organization and general contents of the deposited data package. The specific contents of each folder are determined by the files included in the repository.
-
-**Repository URL:**  
-https://github.com/sblab/AKANKSHA-KULSHRESHTHA
