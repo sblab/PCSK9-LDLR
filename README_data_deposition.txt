@@ -1,89 +1,53 @@
-README DATA DEPOSITION: MODELED STRUCTURES, MOLECULAR DYNAMICS
-SIMULATIONS AND PROTEIN STRUCTURAL NETWORK ANALYSIS
+README: DATA DEPOSITION
+This repository contains the structural and computational data generated during the investigation of wild-type (WT), loss-of-function (LOF), and gain-of-function (GOF) variants of the PCSK9–LDLR complex.
 
-Project Computational characterization of loss-of-function (LOF) and
-gain-of-function (GOF) variants and their effects on protein structure,
-dynamics, and interaction networks.
+The deposited dataset includes modeled three-dimensional protein structures, 500 ns molecular dynamics (MD) simulation trajectories, trajectory analysis outputs, conformational clustering results, representative structures, and protein structural network (PSN) analysis data.
 
-This data package contains modeled structures of the selected LOF and
-GOF variants, molecular dynamics simulation outputs, representative
-conformational structures, analysis files, and protein structural
-network (PSN) data.
+The repository is organized into the following folders:
 
-1.  MODELED STRUCTURES Folder: Modeled_Structures/
+1. Modeled Structures
+Folder: Modeled structures/
 
-Contains the modeled three-dimensional structures of the wild-type 3M0C (WT)
-protein and the selected LOF and GOF variants used as starting
-structures for molecular dynamics simulations.
+Contains two subfolders:
 
+Gain of Function/ – Contains the modeled three-dimensional structures of the selected GOF variants.
+Loss of Function/ – Contains the modeled three-dimensional structures of the selected LOF variants.
+Both subfolders also include the wild-type (WT) PCSK9–LDLR complex structure (PDB ID: 3M0C), which, along with the modeled variant structures, was used as the initial input for molecular dynamics simulations.
 
-The files contain the modeled protein structures prepared for subsequent
-simulation.
+2. Molecular Dynamics Simulation Structures
+Folder: MDS 500ns structures/
 
-2.  MOLECULAR DYNAMICS SIMULATION STRUCTURES Folder: MDS 500ns structures/
+Contains the structural trajectory data generated from 500 ns molecular dynamics simulations of the WT PCSK9–LDLR complex and selected LOF and GOF variants.
 
-Contains structural trajectory data generated from the 500 ns molecular
-dynamics (MD) simulations of the WT protein and selected LOF and GOF
-variants.
+The data are organized into two subfolders:
 
-3.  MD ANALYSIS OUTPUT FILES Folder: MDS_Analysis_XVG/
+Gain of Function/ – Contains MD simulation structures of the WT and selected GOF variants.
+Loss of Function/ – Contains MD simulation structures of the WT and selected LOF variants.
+These structures represent the conformational evolution of the protein complex during the 500 ns simulation period.
 
-Contains numerical output files in GROMACS XVG format generated during
-the analysis of the MD trajectories.
+3. Molecular Dynamics (MD) Analysis Outputs
+The MD trajectory analysis outputs are provided in separate folders for LOF and GOF variants. Each folder contains the corresponding numerical data and supporting outputs generated from the analysis of 500 ns MD trajectories.
 
-Depending on the analyses performed, files may include: -
-Root-mean-square deviation (RMSD) - Root-mean-square fluctuation
-(RMSF) - Radius of gyration (Rg) - Solvent-accessible surface area
-(SASA) - Hydrogen-bond analysis - Other trajectory-derived measurements
+A. Loss-of-Function (LOF) Variant Analysis
 
-XVG files generally contain numerical data together with plot or axis
-metadata in comment lines. The axis labels and units are recorded in
-each file where available. The specific analysis represented by each
-file should be identifiable from its filename.
+Folder	Description
+LOF RMSD/	Root Mean Square Deviation (RMSD) analysis.
+LOF RMSF/	Root Mean Square Fluctuation (RMSF) analysis.
+LOF SASA/	Solvent Accessible Surface Area (SASA) analysis.
+LOF Rg/	Radius of Gyration (Rg) analysis.
+LOF PCA/	Principal Component Analysis (PCA) outputs.
+LOF PSN Analysis/	Protein Structural Network (PSN) analysis outputs.
+B. Gain-of-Function (GOF) Variant Analysis
 
-4.  CLUSTERING LOG FILES Folder: Clustering_Logs/
+Folder	Description
+GOF RMSD/	Root Mean Square Deviation (RMSD) analysis.
+GOF RMSF/	Root Mean Square Fluctuation (RMSF) analysis.
+GOF SASA/	Solvent Accessible Surface Area (SASA) analysis.
+GOF Rg/	Radius of Gyration (Rg) analysis.
+GOF PCA/	Principal Component Analysis (PCA) outputs.
+GOF Clustering Analysis/	Conformational clustering log files and representative structures.
+GOF PSN Analysis/	Protein Structural Network (PSN) analysis outputs.
+The numerical MD analysis outputs are primarily provided in GROMACS XVG format, along with relevant supporting files.
 
-Contains log and supporting output files generated during conformational
-clustering of the MD trajectories.
-
-These files provide information about the clustering procedure and its
-output, such as the number of clusters, cluster populations,
-representative frames, and associated RMSD values, where reported.
-
-5.  REPRESENTATIVE STRUCTURES Folder: Representative_Structures/
-
-Contains representative protein structures selected from the MD
-simulations and/or conformational clusters for the WT, and GOF
-variants.
-
-These structures are provided for visualization and comparative
-structural interpretation. 
-
-6.  PROTEIN STRUCTURAL NETWORK (PSN) DATA Folder: 06_PSN_Data/
-
-Contains the input structures and output data generated for protein
-structural network analysis of the WT, LOF, and GOF variants.
-
-Where available, this folder includes: - PDB structures used as PSN
-input - PSN output and log files - Residue interaction or edge lists -
-Network files used for visualization or analysis (for example,
-Cytoscape-compatible files) - Comparative network data for WT, LOF, and
-GOF variants
-
-The PSN data are intended to support comparison of residue-level
-connectivity and communication networks among the studied variants. The
-software/server, version, analysis settings, and relevant network
-definitions should be documented in the associated methods or metadata.
-
-
-    SOFTWARE AND METHODS The simulations and analyses were performed
-    using the software and protocols described in the associated
-    manuscript. Record the exact software versions, force field,
-    simulation parameters, analysis settings, and PSN tool/version used.
-    Do not rely on this README alone as a substitute for the detailed
-    methods.
-
-
-This README describes the organization and general contents of the
-deposited data package. The exact contents are determined by the files
-included in each folder.
+4. GROMACS Analysis Commands section
+contains GROMACS Analysis_Commands.pdf GROMACS refernce link: https://manual.gromacs.org/documentation/2021.1/manual-2021.1.pdf
