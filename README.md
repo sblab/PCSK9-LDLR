@@ -58,6 +58,8 @@ The MD trajectory analysis outputs are provided in separate folders for LOF and 
 
 The numerical MD analysis outputs are primarily provided in GROMACS XVG format, along with relevant supporting files.
 
-### 4. GROMACS Analysis Commands
-**Folder:** `GROMACS Analysis_Commands/`
+### 4.  GROMACS Analysis Commands section
+contains GROMACS Analysis_Commands.pdf
+GROMACS refernce link: https://manual.gromacs.org/documentation/2021.1/manual-2021.1.pdf
+
 
